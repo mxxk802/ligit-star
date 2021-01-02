@@ -1,0 +1,5 @@
+本项目框架使用springboot hibernate
+redis 客户端使用jedis
+1、Jedis 是直连模式，在多个线程间共享一个 Jedis 实例时是线程不安全的，每个线程都去拿自己的 Jedis 实例，
+当连接数量增多时，物理连接成本就较高了。
+
