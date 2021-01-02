@@ -32,6 +32,7 @@ public class StockController {
     public Object getStockInfo(){
         List<Shares> sharesList=sharesJpaRepository.findAll();
         System.out.println(sharesList.toString());
+        System.out.println("得到所有的信息");
         return sharesList;
     }
     @RequestMapping(value="getOneDetail/{id:^\\d+$}")
